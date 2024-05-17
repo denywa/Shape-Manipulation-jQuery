@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulasi Bentuk</title>
+    <!-- Judul halaman yang menunjukkan fungsinya untuk manipulasi bentuk -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Menghubungkan file CSS eksternal untuk styling -->
+  </head>
+  <body>
+    <div class="shapeContainerWrapper">
+      <div class="shapeContainer"></div>
+      <!-- Kontainer di mana bentuk-bentuk akan ditampilkan -->
+    </div>
+    <div class="controls">
+      <button id="addShape">Tambah Bentuk</button>
+      <!-- Tombol untuk menambahkan bentuk -->
+      <button id="removeShape">Hapus Bentuk</button>
+      <!-- Tombol untuk menghapus bentuk -->
+    </div>
+    <div class="shapeControls">
+      <select id="shapeType">
+        <option value="circle">Lingkaran</option>
+        <!-- Opsi untuk memilih bentuk lingkaran -->
+        <option value="square">Persegi</option>
+        <!-- Opsi untuk memilih bentuk persegi -->
+      </select>
+      <input type="color" id="shapeColor" value="#ff0000" />
+      <!-- Pemilih warna untuk bentuk -->
+      <input type="number" id="shapeSize" placeholder="Ukuran(px)" min="1" />
+      <!-- Input untuk menentukan ukuran bentuk -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Menghubungkan jQuery untuk manipulasi DOM -->
+    <script src="script.js"></script>
+    <!-- Menghubungkan file JavaScript eksternal untuk logika manipulasi bentuk -->
+  </body>
+</html>
